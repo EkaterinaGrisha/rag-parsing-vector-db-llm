@@ -1,0 +1,110 @@
+# RAG-консультант ювелирного магазина: парсинг документов, векторные БД и сравнение LLM
+
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange)](https://nbviewer.org/github/EkaterinaGrisha/rag-parsing-vector-db-llm/blob/main/rag_parsing_vector_db_llm.ipynb)
+
+Работа выполнена в рамках практического задания курса по работе с LLM (практика 1, базы данных). Объект исследования — учебная RAG-система, которая отвечает на вопросы клиентов о выборе ювелирных изделий и уходе за ними. В работе исследованы три её компонента:
+
+* собственный парсинг документов вместо библиотеки `unstructured`;
+* векторные БД Qdrant и ChromaDB;
+* языковые модели GigaChat и модели OpenRouter, подключённые через единый интерфейс.
+
+**Стек экспериментов** (все эксперименты проведены 17 октября 2026 года):
+
+* компьютер — Apple M5 (10 ядер), 32 ГБ ОЗУ, macOS, Python 3.11;
+* парсинг — `pypdf`, `python-docx`, Tesseract (OCR сканов); для сравнения — `unstructured` 0.27 (стратегии `fast` и `hi_res`);
+* векторные БД — Qdrant 1.19.2 (нативный сервер), ChromaDB 1.5.9 (сервер `chroma run` и встроенный `PersistentClient`); эмбеддинги — `intfloat/multilingual-e5-small`;
+* языковые модели:
+  * GigaChat-2 и GigaChat-2-Max (Freemium);
+  * бесплатные модели OpenRouter `liquid/lfm-2.5-2.6b:free` и `nvidia/nemotron-3-super-120b-a12b:free`;
+  * локальный запуск LFM-2.5-2.6B через MLX;
+* независимый оценщик ответов (LLM-as-a-Judge) — `deepseek-flash`.
+
+Все измерения и ответы моделей получены в результате реальных запусков и сохранены в каталоге `practice_db/results/`.
+
+## Содержание
+
+| № | Задание | Что сделано |
+|---|---|---|
+| 1 | Собственный парсинг документов | единый интерфейс `load_document` для PDF, DOCX и TXT, OCR страниц без текстового слоя, очистка (колонтитулы, переносы, разрывы слов, артефакты PDF), чанки 800 / 150 символов; тест на 3 PDF (текст, таблицы, скан), 2 DOCX и TXT; контрольные фразы, время, объём; сравнение с unstructured (API из ноутбука курса и локальный запуск) и влияние разбиения на поиск |
+| 2 | Qdrant и ChromaDB | коллекции на 1 000 и 10 000 абзацев SberQuAD с одинаковыми векторами, метрикой и параметрами HNSW; время индексации, RAM, диск; 15 запросов (время, воспроизводимость, Recall@5, Hit@5); 20 последовательных и 5 параллельных запросов; 6 типов фильтров; удобство API; итоговая таблица |
+| 3 | GigaChat и OpenRouter | единый интерфейс `ask` (GigaChat, OpenRouter, MLX) с кэшем и журналом обращений; RAG-консультант с переключением модели; 5 задач (логика, код, аналитика, два RAG-вопроса) с автоматическими проверками и LLM-as-a-Judge; длинный промпт и пределы контекста; нагрузочный тест; локальный запуск; сравнительная таблица |
+
+## Основные результаты
+
+* **Парсинг.**
+  * Собственный конвейер извлекает 43 из 44 контрольных фраз; потерян только текст на рисунке в DOCX.
+  * Документ обрабатывается за 1–340 мс, что в 36–155 раз быстрее режима `hi_res` библиотеки unstructured.
+  * Очистка восстанавливает разрывы слов в ячейках таблиц PDF по словарю самого документа.
+  * В RAG мелкие элементы unstructured точнее находят одиночный факт (Hit@3 = 1,00 против 0,92), но дают в контексте только 39 % частей ответа на вопросы со списками и таблицами. Чанки собственного конвейера дают 90 %.
+* **Векторные БД.**
+  * Индексация 10 000 документов: Qdrant — 3,6 с вместе с индексами метаданных, ChromaDB — 5,3–5,4 с.
+  * Поиск у всех конфигураций занимает меньше 1,2 мс; быстрее всего Qdrant по gRPC (0,45 мс) и встроенная ChromaDB (0,60 мс).
+  * Главное различие — фильтрация: Qdrant отвечает за 0,7–1,1 мс независимо от фильтра, ChromaDB — за 5–24 мс.
+  * ChromaDB экономнее по памяти: 173 МБ против 299 МБ.
+* **Языковые модели.**
+  * Лучшее качество — у Nemotron 3 Super 120B: 0,95 по автоматическим проверкам, единственная модель с верным расчётом общей выручки. Медиана времени ответа у неё — 24,5 с.
+  * Наименьшая и наиболее стабильная задержка — у GigaChat: 2,7–4,0 с, ни одного отказа. При этом модели GigaChat допускают арифметические и логические ошибки (0,80–0,83).
+  * Малая рассуждающая модель LFM-2.5-2.6B исчерпывает бюджет токенов на многошаговых задачах.
+  * Выявлены пределы: окно GigaChat-2 — 130 048 токенов; тело запроса — около 1 МиБ, что для русского текста составляет ≈121 тыс. токенов; LFM в OpenRouter ограничена выводом 8 192 токена.
+  * Бесплатная Gemma 4 31B была недоступна (все обращения — 429).
+* **Локальный запуск.** LFM-2.5-2.6B на Apple M5 генерирует 38 токенов в секунду против 210 через API, при сопоставимом качестве. Локальный запуск оправдан при требованиях конфиденциальности, работе без сети и отсутствии лимитов провайдера.
+
+## Структура репозитория
+
+```
+rag_parsing_vector_db_llm.ipynb         ноутбук с кодом, результатами и выводами
+practice_db/documents/                  тестовый корпус: 3 PDF, 2 DOCX, 1 TXT
+practice_db/scripts/                    подготовка DOCX/TXT и замер встроенной ChromaDB в отдельном процессе
+practice_db/data/catalog.json           каталог изделий RAG-консультанта
+practice_db/results/                    результаты экспериментов, кэш ответов моделей и журнал обращений к API
+requirements.txt                        зависимости
+.env.example                            шаблон файла с ключами
+certs/russian_trusted_root_ca.pem       корневой сертификат Минцифры для проверки SSL GigaChat
+```
+
+## Воспроизведение
+
+1. Установить зависимости: `pip install -r requirements.txt` (проверено на Python 3.11).
+2. Скопировать `.env.example` в `.env` и указать ключи `GIGACHAT_CREDENTIALS`, `OPENROUTER_API_KEY` и, при необходимости, `DEEPSEEK_API_KEY`.
+3. Открыть ноутбук и выполнить ячейки.
+
+При наличии каталога `practice_db/results/` ноутбук воспроизводит приведённые таблицы и выводы без новых измерений и запросов к API. Набор SberQuAD и модель эмбеддингов загружаются автоматически.
+
+Чтобы провести эксперименты заново, нужно установить `RERUN = True`. Для этого дополнительно потребуются:
+
+* Tesseract с языковым пакетом `rus`;
+* сервер Qdrant: на macOS arm64 бинарный файл загружается автоматически с проверкой SHA-256, на других платформах можно использовать `docker run qdrant/qdrant`;
+* для локальной модели — Apple Silicon и `mlx-lm`.
+
+**Источники данных.**
+
+* PDF-документы:
+  * Управление Роспотребнадзора по Республике Алтай: https://04.rospotrebnadzor.ru/index.php/consumer-information/faq/18133-07032023.pdf;
+  * приказ ФПП от 24.11.2025 № 189н: https://probpalata.gov.ru/files/Приказ-ФПП-24.11.2025-189н.pdf;
+  * памятка Роспотребнадзора (сайт администрации Лужского района): https://luga.ru/Files/file/1673875081yuvelirka.pdf.
+* DOCX и TXT подготовлены скриптом из текстов памяток исходного корпуса курса.
+* Набор SberQuAD: https://huggingface.co/datasets/kuznetsoffandrey/sberquad.
+
+Сертификат `certs/russian_trusted_root_ca.pem` загружен с официального ресурса https://www.gosuslugi.ru/crt. Он используется только клиентом GigaChat.
+
+## Технологии
+
+Python, Jupyter, pypdf, python-docx, Tesseract, unstructured, sentence-transformers, ChromaDB, Qdrant, GigaChat SDK, OpenAI SDK (OpenRouter, DeepSeek), MLX, pandas, Matplotlib.
+
+## English summary
+
+A study of three components of a RAG assistant for a jewellery store, built on Russian-language consumer documents.
+
+* **Document parsing.** A custom PDF/DOCX/TXT parser without `unstructured`: text cleaning, OCR fallback for scanned pages, fixed-size chunking with overlap.
+  * It recovers 43 of 44 control phrases.
+  * It runs 36–155× faster than `unstructured` hi_res.
+  * Its chunks bring 90% of multi-part answers into the context, against 39% for unstructured elements.
+* **Vector databases.** Qdrant and ChromaDB on 1k and 10k SberQuAD passages with identical vectors and HNSW settings.
+  * Search latency is under 1.2 ms everywhere.
+  * Qdrant keeps filtered search at about 1 ms, while ChromaDB filtering takes 5–24 ms.
+  * ChromaDB uses less memory.
+* **LLMs.** GigaChat-2 and GigaChat-2-Max compared with free OpenRouter models (LFM-2.5-2.6B and Nemotron 3 Super 120B) and a local MLX run, all through one interface.
+  * Tasks: logic, code, analytics, RAG questions, a long prompt, context-limit probes and a load test.
+  * Quality was scored by automatic checks and a DeepSeek judge.
+  * Nemotron gives the best quality. GigaChat gives the lowest and most stable latency.
+  * The local 2.6B model is 5.5× slower than the API at comparable quality.

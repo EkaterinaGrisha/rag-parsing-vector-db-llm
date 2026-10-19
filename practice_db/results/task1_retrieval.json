@@ -1,0 +1,83 @@
+{
+ "A. элементы unstructured": {
+  "units": 460,
+  "hits": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "completeness": [
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.75
+  ],
+  "context_chars": 840.5
+ },
+ "B. собственный конвейер": {
+  "units": 108,
+  "hits": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "completeness": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.5,
+   0.8,
+   1.0
+  ],
+  "context_chars": 2062.25
+ },
+ "C. unstructured + собственный чанкер": {
+  "units": 107,
+  "hits": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  "completeness": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.75,
+   0.8,
+   1.0
+  ],
+  "context_chars": 2051.5
+ }
+}

@@ -1,0 +1,5 @@
+{
+ "passages_per_s": 189.44528561226292,
+ "query_ms_median": 11.311874957755208,
+ "device": "mps"
+}

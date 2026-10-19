@@ -1,0 +1,135 @@
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 5.509, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 1.13, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 4.182, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2-Max", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 8.108, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2-Max", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 2.813, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2-Max", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 6.033, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 2.656, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 0.409, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2-Max", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 3.991, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "GigaChat-2-Max", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 0.455, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "LFM-2.5-2.6B", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 19.53, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "LFM-2.5-2.6B", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 11.381, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "LFM-2.5-2.6B", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 5.112, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "LFM-2.5-2.6B", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 6.735, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "LFM-2.5-2.6B", "tag": "первый прогон", "attempt": 1, "status": 200, "latency_s": 2.524, "error": ""}
+{"time": "2026-10-17 (первый прогон)", "model": "Gemma-4-31B", "tag": "первый прогон", "attempt": 1, "status": 429, "latency_s": 0.278, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 (первый прогон)", "model": "Gemma-4-31B", "tag": "первый прогон", "attempt": 1, "status": 429, "latency_s": 0.31, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 (первый прогон)", "model": "Gemma-4-31B", "tag": "первый прогон", "attempt": 1, "status": 429, "latency_s": 0.322, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 (первый прогон)", "model": "Gemma-4-31B", "tag": "первый прогон", "attempt": 1, "status": 429, "latency_s": 0.29, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 (первый прогон)", "model": "Gemma-4-31B", "tag": "первый прогон", "attempt": 1, "status": 429, "latency_s": 0.348, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 18:51:09", "model": "Gemma-4-31B", "tag": "", "attempt": 1, "status": 429, "latency_s": 0.93, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 18:51:30", "model": "Gemma-4-31B", "tag": "", "attempt": 2, "status": 429, "latency_s": 0.751, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 18:52:31", "model": "Gemma-4-31B", "tag": "", "attempt": 3, "status": 429, "latency_s": 1.153, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your "}
+{"time": "2026-10-17 18:55:09", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 45.697, "error": ""}
+{"time": "2026-10-17 18:55:42", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 33.327, "error": ""}
+{"time": "2026-10-17 18:56:07", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 24.503, "error": ""}
+{"time": "2026-10-17 18:56:20", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 13.745, "error": ""}
+{"time": "2026-10-17 18:56:24", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.73, "error": ""}
+{"time": "2026-10-17 18:58:21", "model": "LFM-2.5-2.6B", "tag": "", "attempt": 1, "status": 200, "latency_s": 43.943, "error": ""}
+{"time": "2026-10-17 19:01:27", "model": "GigaChat-2", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.437, "error": ""}
+{"time": "2026-10-17 19:01:29", "model": "GigaChat-2-Max", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.363, "error": ""}
+{"time": "2026-10-17 19:01:35", "model": "LFM-2.5-2.6B", "tag": "", "attempt": 1, "status": 200, "latency_s": 6.231, "error": ""}
+{"time": "2026-10-17 19:01:39", "model": "Nemotron-3-Super-120B", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.731, "error": ""}
+{"time": "2026-10-17 19:01:50", "model": "LFM-2.5-2.6B", "tag": "", "attempt": 1, "status": 400, "latency_s": 1.126, "error": "Error code: 400 - {'error': {'message': \"This endpoint's maximum context length is 65536 tokens. However, you requested about 158008 tokens (157752 of text input, 256 in the output). Please reduce the"}
+{"time": "2026-10-17 19:01:52", "model": "GigaChat-2", "tag": "", "attempt": 1, "status": null, "latency_s": 1.163, "error": "413 https://gigachat.devices.sberbank.ru/api/v1/chat/completions: b'<html>\\r\\n<head><title>413 Request Entity Too Large</title></head>\\r\\n<body>\\r\\n<center><h1>413 Request Entity Too Large</h1></cente"}
+{"time": "2026-10-17 19:01:53", "model": "GigaChat-2", "tag": "load-1", "attempt": 1, "status": 200, "latency_s": 1.624, "error": ""}
+{"time": "2026-10-17 19:01:54", "model": "GigaChat-2", "tag": "load-2", "attempt": 1, "status": 200, "latency_s": 1.09, "error": ""}
+{"time": "2026-10-17 19:01:55", "model": "GigaChat-2", "tag": "load-3", "attempt": 1, "status": 200, "latency_s": 0.633, "error": ""}
+{"time": "2026-10-17 19:01:56", "model": "GigaChat-2", "tag": "load-4", "attempt": 1, "status": 200, "latency_s": 0.612, "error": ""}
+{"time": "2026-10-17 19:01:56", "model": "GigaChat-2", "tag": "load-5", "attempt": 1, "status": 200, "latency_s": 0.622, "error": ""}
+{"time": "2026-10-17 19:01:57", "model": "GigaChat-2", "tag": "load-6", "attempt": 1, "status": 200, "latency_s": 0.515, "error": ""}
+{"time": "2026-10-17 19:01:57", "model": "GigaChat-2", "tag": "load-7", "attempt": 1, "status": 200, "latency_s": 0.505, "error": ""}
+{"time": "2026-10-17 19:01:58", "model": "GigaChat-2", "tag": "load-8", "attempt": 1, "status": 200, "latency_s": 0.513, "error": ""}
+{"time": "2026-10-17 19:01:58", "model": "GigaChat-2", "tag": "load-9", "attempt": 1, "status": 200, "latency_s": 0.508, "error": ""}
+{"time": "2026-10-17 19:01:59", "model": "GigaChat-2", "tag": "load-10", "attempt": 1, "status": 200, "latency_s": 0.51, "error": ""}
+{"time": "2026-10-17 19:02:00", "model": "GigaChat-2-Max", "tag": "load-1", "attempt": 1, "status": 200, "latency_s": 1.426, "error": ""}
+{"time": "2026-10-17 19:02:01", "model": "GigaChat-2-Max", "tag": "load-2", "attempt": 1, "status": 200, "latency_s": 1.25, "error": ""}
+{"time": "2026-10-17 19:02:03", "model": "GigaChat-2-Max", "tag": "load-3", "attempt": 1, "status": 200, "latency_s": 1.102, "error": ""}
+{"time": "2026-10-17 19:02:04", "model": "GigaChat-2-Max", "tag": "load-4", "attempt": 1, "status": 200, "latency_s": 1.473, "error": ""}
+{"time": "2026-10-17 19:02:05", "model": "GigaChat-2-Max", "tag": "load-5", "attempt": 1, "status": 200, "latency_s": 1.3, "error": ""}
+{"time": "2026-10-17 19:02:07", "model": "GigaChat-2-Max", "tag": "load-6", "attempt": 1, "status": 200, "latency_s": 1.619, "error": ""}
+{"time": "2026-10-17 19:02:09", "model": "GigaChat-2-Max", "tag": "load-7", "attempt": 1, "status": 200, "latency_s": 1.646, "error": ""}
+{"time": "2026-10-17 19:02:10", "model": "GigaChat-2-Max", "tag": "load-8", "attempt": 1, "status": 200, "latency_s": 1.632, "error": ""}
+{"time": "2026-10-17 19:02:12", "model": "GigaChat-2-Max", "tag": "load-9", "attempt": 1, "status": 200, "latency_s": 1.431, "error": ""}
+{"time": "2026-10-17 19:02:13", "model": "GigaChat-2-Max", "tag": "load-10", "attempt": 1, "status": 200, "latency_s": 1.227, "error": ""}
+{"time": "2026-10-17 19:02:14", "model": "LFM-2.5-2.6B", "tag": "load-1", "attempt": 1, "status": 429, "latency_s": 0.703, "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your ow"}
+{"time": "2026-10-17 19:02:16", "model": "LFM-2.5-2.6B", "tag": "load-2", "attempt": 1, "status": 200, "latency_s": 2.032, "error": ""}
+{"time": "2026-10-17 19:02:17", "model": "LFM-2.5-2.6B", "tag": "load-3", "attempt": 1, "status": 200, "latency_s": 1.22, "error": ""}
+{"time": "2026-10-17 19:02:18", "model": "LFM-2.5-2.6B", "tag": "load-4", "attempt": 1, "status": 200, "latency_s": 1.47, "error": ""}
+{"time": "2026-10-17 19:02:21", "model": "LFM-2.5-2.6B", "tag": "load-5", "attempt": 1, "status": 200, "latency_s": 2.344, "error": ""}
+{"time": "2026-10-17 19:02:32", "model": "LFM-2.5-2.6B", "tag": "load-6", "attempt": 1, "status": 200, "latency_s": 11.417, "error": ""}
+{"time": "2026-10-17 19:02:34", "model": "LFM-2.5-2.6B", "tag": "load-7", "attempt": 1, "status": 200, "latency_s": 2.076, "error": ""}
+{"time": "2026-10-17 19:02:44", "model": "LFM-2.5-2.6B", "tag": "load-8", "attempt": 1, "status": 200, "latency_s": 10.058, "error": ""}
+{"time": "2026-10-17 19:02:47", "model": "LFM-2.5-2.6B", "tag": "load-9", "attempt": 1, "status": 200, "latency_s": 2.872, "error": ""}
+{"time": "2026-10-17 19:02:52", "model": "LFM-2.5-2.6B", "tag": "load-10", "attempt": 1, "status": 200, "latency_s": 5.015, "error": ""}
+{"time": "2026-10-17 19:02:55", "model": "Nemotron-3-Super-120B", "tag": "load-1", "attempt": 1, "status": 200, "latency_s": 2.956, "error": ""}
+{"time": "2026-10-17 19:02:59", "model": "Nemotron-3-Super-120B", "tag": "load-2", "attempt": 1, "status": 200, "latency_s": 4.309, "error": ""}
+{"time": "2026-10-17 19:03:02", "model": "Nemotron-3-Super-120B", "tag": "load-3", "attempt": 1, "status": 200, "latency_s": 2.779, "error": ""}
+{"time": "2026-10-17 19:03:05", "model": "Nemotron-3-Super-120B", "tag": "load-4", "attempt": 1, "status": 200, "latency_s": 2.368, "error": ""}
+{"time": "2026-10-17 19:03:09", "model": "Nemotron-3-Super-120B", "tag": "load-5", "attempt": 1, "status": 200, "latency_s": 4.067, "error": ""}
+{"time": "2026-10-17 19:03:12", "model": "Nemotron-3-Super-120B", "tag": "load-6", "attempt": 1, "status": 200, "latency_s": 3.395, "error": ""}
+{"time": "2026-10-17 19:03:17", "model": "Nemotron-3-Super-120B", "tag": "load-7", "attempt": 1, "status": 200, "latency_s": 5.407, "error": ""}
+{"time": "2026-10-17 19:03:21", "model": "Nemotron-3-Super-120B", "tag": "load-8", "attempt": 1, "status": 200, "latency_s": 3.326, "error": ""}
+{"time": "2026-10-17 19:03:26", "model": "Nemotron-3-Super-120B", "tag": "load-9", "attempt": 1, "status": 200, "latency_s": 5.389, "error": ""}
+{"time": "2026-10-17 19:03:37", "model": "Nemotron-3-Super-120B", "tag": "load-10", "attempt": 1, "status": 200, "latency_s": 10.838, "error": ""}
+{"time": "2026-10-17 19:04:46", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.84, "error": ""}
+{"time": "2026-10-17 19:04:48", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.241, "error": ""}
+{"time": "2026-10-17 19:04:51", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.022, "error": ""}
+{"time": "2026-10-17 19:04:54", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.056, "error": ""}
+{"time": "2026-10-17 19:04:55", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.487, "error": ""}
+{"time": "2026-10-17 19:04:58", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.948, "error": ""}
+{"time": "2026-10-17 19:05:01", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.791, "error": ""}
+{"time": "2026-10-17 19:05:04", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.835, "error": ""}
+{"time": "2026-10-17 19:05:07", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.299, "error": ""}
+{"time": "2026-10-17 19:05:09", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.778, "error": ""}
+{"time": "2026-10-17 19:05:11", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.018, "error": ""}
+{"time": "2026-10-17 19:05:14", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.472, "error": ""}
+{"time": "2026-10-17 19:05:16", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.726, "error": ""}
+{"time": "2026-10-17 19:05:19", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.984, "error": ""}
+{"time": "2026-10-17 19:05:21", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.573, "error": ""}
+{"time": "2026-10-17 19:05:24", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.922, "error": ""}
+{"time": "2026-10-17 19:05:27", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.739, "error": ""}
+{"time": "2026-10-17 19:05:29", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.353, "error": ""}
+{"time": "2026-10-17 19:05:32", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.098, "error": ""}
+{"time": "2026-10-17 19:05:33", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.334, "error": ""}
+{"time": "2026-10-17 19:05:35", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.052, "error": ""}
+{"time": "2026-10-17 19:05:38", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.756, "error": ""}
+{"time": "2026-10-17 19:05:41", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.889, "error": ""}
+{"time": "2026-10-17 19:05:43", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.332, "error": ""}
+{"time": "2026-10-17 19:05:45", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.506, "error": ""}
+{"time": "2026-10-17 19:05:46", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.273, "error": ""}
+{"time": "2026-10-17 19:05:49", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.751, "error": ""}
+{"time": "2026-10-17 19:05:50", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.423, "error": ""}
+{"time": "2026-10-17 19:05:54", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.376, "error": ""}
+{"time": "2026-10-17 19:07:59", "model": "GigaChat-2", "tag": "", "attempt": 1, "status": 413, "latency_s": 1.77, "error": "413 https://gigachat.devices.sberbank.ru/api/v1/chat/completions: b'<html>\\r\\n<head><title>413 Request Entity Too Large</title></head>\\r\\n<body>\\r\\n<center><h1>413 Request Entity Too Large</h1></cente"}
+{"time": "2026-10-17 19:08:02", "model": "GigaChat-2", "tag": "", "attempt": 1, "status": 422, "latency_s": 3.238, "error": "422 https://gigachat.devices.sberbank.ru/api/v1/chat/completions: b'{\"status\":422,\"message\":\"Invalid params: context too long 158137, maximum allowed context is 130048\"}\\n', Headers({'server': 'SynGX'"}
+{"time": "2026-10-17 19:09:01", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 4.39, "error": ""}
+{"time": "2026-10-17 19:09:08", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 6.552, "error": ""}
+{"time": "2026-10-17 19:09:12", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 4.547, "error": ""}
+{"time": "2026-10-17 19:09:15", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.095, "error": ""}
+{"time": "2026-10-17 19:09:17", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.225, "error": ""}
+{"time": "2026-10-17 19:09:24", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 6.939, "error": ""}
+{"time": "2026-10-17 19:09:29", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 5.91, "error": ""}
+{"time": "2026-10-17 19:09:33", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.655, "error": ""}
+{"time": "2026-10-17 19:09:37", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 3.742, "error": ""}
+{"time": "2026-10-17 19:09:38", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.631, "error": ""}
+{"time": "2026-10-17 19:09:40", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.765, "error": ""}
+{"time": "2026-10-17 19:09:45", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 4.967, "error": ""}
+{"time": "2026-10-17 19:09:48", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.702, "error": ""}
+{"time": "2026-10-17 19:09:53", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 5.334, "error": ""}
+{"time": "2026-10-17 19:09:55", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.657, "error": ""}
+{"time": "2026-10-17 19:09:57", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.541, "error": ""}
+{"time": "2026-10-17 19:10:06", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 8.792, "error": ""}
+{"time": "2026-10-17 19:10:09", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.91, "error": ""}
+{"time": "2026-10-17 19:10:14", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 5.205, "error": ""}
+{"time": "2026-10-17 19:10:16", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.705, "error": ""}
+{"time": "2026-10-17 19:10:17", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.346, "error": ""}
+{"time": "2026-10-17 19:10:21", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 4.079, "error": ""}
+{"time": "2026-10-17 19:10:27", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 5.552, "error": ""}
+{"time": "2026-10-17 19:10:29", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.051, "error": ""}
+{"time": "2026-10-17 19:10:31", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.496, "error": ""}
+{"time": "2026-10-17 19:10:32", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.489, "error": ""}
+{"time": "2026-10-17 19:10:35", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 2.972, "error": ""}
+{"time": "2026-10-17 19:10:37", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 1.477, "error": ""}
+{"time": "2026-10-17 19:10:41", "model": "deepseek-flash (оценщик)", "tag": "", "attempt": 1, "status": 200, "latency_s": 4.533, "error": ""}

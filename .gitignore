@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# создаются при выполнении ноутбука
+practice_db/storage/
+practice_db/bin/
+practice_db/data/sberquad/
+practice_db/data/vdb/
+practice_db/data/pdf_scan_noocr.pdf

@@ -1,0 +1,15 @@
+{
+ "LFM-2.5-2.6B": {
+  "context_length": 65536,
+  "max_completion_tokens": 8192,
+  "paid_prompt_usd_per_1m": null,
+  "paid_completion_usd_per_1m": null
+ },
+ "Nemotron-3-Super-120B": {
+  "context_length": 262144,
+  "max_completion_tokens": 235929,
+  "paid_prompt_usd_per_1m": 0.08,
+  "paid_completion_usd_per_1m": 0.44999999999999996
+ },
+ "free_models_total": 16
+}
