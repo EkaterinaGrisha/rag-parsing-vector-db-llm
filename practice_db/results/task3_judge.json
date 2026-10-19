@@ -1,0 +1,242 @@
+[
+ {
+  "model": "GigaChat-2",
+  "task": "logic",
+  "accuracy": 2,
+  "structure": 5,
+  "hallucinations": 2,
+  "comment": "Итоговый ответ неверен: перепутаны кольцо и серьги; рассуждение содержит ложные выводы."
+ },
+ {
+  "model": "GigaChat-2",
+  "task": "code",
+  "accuracy": 2,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Не пропускает последний фрагмент, целиком входящий в предыдущий: пример вернёт лишний 'j'. Проверки аргументов и пустая строка корректны."
+ },
+ {
+  "model": "GigaChat-2",
+  "task": "analytics",
+  "accuracy": 3,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "По категориям верно, но общая выручка рассчитана неверно: 2 950 000 → 3 300 000, рост +11,86 %, а не +10 %."
+ },
+ {
+  "model": "GigaChat-2",
+  "task": "rag",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ корректен и опирается на контекст, но упущен способ с раствором горячей воды и нашатырного спирта 1:1."
+ },
+ {
+  "model": "GigaChat-2",
+  "task": "rag_no_answer",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Корректно указано отсутствие в контексте данных о гарантийном сроке SOKOLOV; конкретных сроков не выдумано."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "logic",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 3,
+  "comment": "Ответ верный, формат соблюдён, но в рассуждении ошибочно названы серьги самым дорогим изделием; по условию дороже изделие Вики."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "code",
+  "accuracy": 2,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Код не проходит пример: добавляет лишний 'j'; при len(text)<size падает из-за chunks[-1]. Проверки и формат в целом соблюдены."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "analytics",
+  "accuracy": 3,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Верно по категориям, но итог II квартала указан 3 290 000 вместо 3 300 000, поэтому общий рост +11,5% неверен; решения в целом обоснованы."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "rag",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 3,
+  "comment": "Способы в основном из контекста, но добавлены неуказанные детали: «до исчезновения налёта», «круговыми движениями», «под струёй воды»; в нашатырном рецепте пропущено мыло."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "rag_no_answer",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ верно сообщает об отсутствии сведений о гарантийном сроке SOKOLOV; галлюцинаций нет."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "logic",
+  "accuracy": 1,
+  "structure": 1,
+  "hallucinations": 5,
+  "comment": "Ответ отсутствует: решение не приведено и требуемый формат не соблюдён. Галлюцинаций нет."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "code",
+  "accuracy": 2,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Функция добавляет лишний последний фрагмент, если остаток целиком входит в предыдущий: пример даёт ['abcd','defg','ghij','j'] вместо ожидаемого. Остальные проверки корректны."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "analytics",
+  "accuracy": 3,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Проценты по категориям верны, но общая выручка и рост посчитаны неверно: 2 950 000 → 3 300 000, +11,86 %, а не +8,4 %."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "rag",
+  "accuracy": 3,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Верно описаны два способа, но пропущены сода и зубной порошок/мел; добавлен не относящийся к серебру совет для позолоты."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "rag_no_answer",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ верно сообщает об отсутствии сведений о гарантии SOKOLOV и не выдумывает срок; структура ясная, галлюцинаций нет."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "logic",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ полностью верный, рассуждение корректно и соответствует условиям; формат соблюдён."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "code",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Верно в большинстве случаев, но при непустом тексте длиной ≤ overlap возвращает пустой список, нарушая разбиение; формат соблюдён."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "analytics",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Расчёты и выводы верны; формат чёткий. Небольшое допущение о «высокомаржинальности цепочек» не подтверждено условием."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "rag",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Ответ в целом верен, но упущен способ с горячей водой и нашатырным спиртом 1:1; добавлены незначительные неуказанные детали."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "rag_no_answer",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ точно указывает на отсутствие сведений о гарантийном сроке SOKOLOV, не добавляет вымышленных данных и соответствует формату."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "logic",
+  "accuracy": 1,
+  "structure": 1,
+  "hallucinations": 5,
+  "comment": "Ответ отсутствует: решение не приведено и требуемый формат не соблюдён. Галлюцинаций нет."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "code",
+  "accuracy": 1,
+  "structure": 1,
+  "hallucinations": 5,
+  "comment": "Ответ пустой: код функции отсутствует, формат не соблюдён. Галлюцинаций нет, так как нет утверждений."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "analytics",
+  "accuracy": 3,
+  "structure": 5,
+  "hallucinations": 3,
+  "comment": "Проценты по категориям верны, но итоги кварталов и общий рост посчитаны неверно; также необоснованно указан рост +20%."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "rag",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Методы соответствуют контексту, но есть опечатки «насатрного»; структура ясная, неконтекстных способов нет."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "rag_no_answer",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Верно указано отсутствие данных о гарантии SOKOLOV; общие нормы отделены, галлюцинаций нет."
+ },
+ {
+  "model": "GigaChat-2",
+  "task": "long",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ полностью совпадает с эталоном: 6 капель нашатырного спирта на стакан воды для украшений с камнями."
+ },
+ {
+  "model": "GigaChat-2-Max",
+  "task": "long",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ полностью соответствует эталону: указано 6 капель нашатырного спирта на стакан воды для украшений с камнями, без лишних утверждений."
+ },
+ {
+  "model": "LFM-2.5-2.6B",
+  "task": "long",
+  "accuracy": 1,
+  "structure": 4,
+  "hallucinations": 2,
+  "comment": "Ответ не содержит эталонных 6 капель нашатыря; вводит отсутствующие в условии «насыщенный/трубный спирт»."
+ },
+ {
+  "model": "Nemotron-3-Super-120B",
+  "task": "long",
+  "accuracy": 5,
+  "structure": 5,
+  "hallucinations": 5,
+  "comment": "Ответ полностью совпадает с эталоном, чётко оформлен и не содержит лишних утверждений."
+ },
+ {
+  "model": "LFM-2.5-2.6B (локально)",
+  "task": "long",
+  "accuracy": 4,
+  "structure": 5,
+  "hallucinations": 4,
+  "comment": "Количество верное (6 капель на стакан), но есть опечатка «насхаты» и упоминание файла docx_care.docx, которого нет в условии."
+ }
+]
