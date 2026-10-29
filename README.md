@@ -90,21 +90,3 @@ certs/russian_trusted_root_ca.pem       корневой сертификат М
 ## Технологии
 
 Python, Jupyter, pypdf, python-docx, Tesseract, unstructured, sentence-transformers, ChromaDB, Qdrant, GigaChat SDK, OpenAI SDK (OpenRouter, DeepSeek), MLX, pandas, Matplotlib.
-
-## English summary
-
-A study of three components of a RAG assistant for a jewellery store, built on Russian-language consumer documents.
-
-* **Document parsing.** A custom PDF/DOCX/TXT parser without `unstructured`: text cleaning, OCR fallback for scanned pages, fixed-size chunking with overlap.
-  * It recovers 43 of 44 control phrases.
-  * It runs 36–155× faster than `unstructured` hi_res.
-  * Its chunks bring 90% of multi-part answers into the context, against 39% for unstructured elements.
-* **Vector databases.** Qdrant and ChromaDB on 1k and 10k SberQuAD passages with identical vectors and HNSW settings.
-  * Search latency is under 1.2 ms everywhere.
-  * Qdrant keeps filtered search at about 1 ms, while ChromaDB filtering takes 5–24 ms.
-  * ChromaDB uses less memory.
-* **LLMs.** GigaChat-2 and GigaChat-2-Max compared with free OpenRouter models (LFM-2.5-2.6B and Nemotron 3 Super 120B) and a local MLX run, all through one interface.
-  * Tasks: logic, code, analytics, RAG questions, a long prompt, context-limit probes and a load test.
-  * Quality was scored by automatic checks and a DeepSeek judge.
-  * Nemotron gives the best quality. GigaChat gives the lowest and most stable latency.
-  * The local 2.6B model is 5.5× slower than the API at comparable quality.
