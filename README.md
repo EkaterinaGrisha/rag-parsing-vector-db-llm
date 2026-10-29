@@ -10,7 +10,6 @@
 
 **Стек экспериментов** (все эксперименты проведены 17 октября 2026 года):
 
-* компьютер — Apple M5 (10 ядер), 32 ГБ ОЗУ, macOS, Python 3.11;
 * парсинг — `pypdf`, `python-docx`, Tesseract (OCR сканов); для сравнения — `unstructured` 0.27 (стратегии `fast` и `hi_res`);
 * векторные БД — Qdrant 1.19.2 (нативный сервер), ChromaDB 1.5.9 (сервер `chroma run` и встроенный `PersistentClient`); эмбеддинги — `intfloat/multilingual-e5-small`;
 * языковые модели:
